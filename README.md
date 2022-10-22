@@ -48,8 +48,7 @@
 
 # 4. 자기 소개
 |이름|박수민|사진|
-|메일|cjstk4_@naver.com|-:|
-|왼쪽정렬|중앙정렬|오른쪽정렬|  
+|메일|cjstk4_(@)naver.com| |  
 |abc|abc|abc|
 |abc|abc|abc|
 |abc|abc|abc|
