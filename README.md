@@ -3,6 +3,7 @@
 [프로젝트 홈페이지](https://koposoftware.github.io/2022_4_smpark/)
 
 # 1. 프로젝트 소개
+[프로젝트 제안서](/project.pptx)<br>
 ## 1-1. 개발환경
 - OS : window10
 - Language : JAVA, Javascript, JQuery, html, css  PL/SQL
@@ -17,14 +18,12 @@
 ## 1-3. 프로젝트 기대효과
 <img src="anticipation.PNG"/>
 
+## 1-4. 프로젝트 일정
+<img src="Gantt_chart.png"/>
 
 
-# 2. 프로젝트 제안서
+# 2. 프로젝트 구성 
 
-프로젝트 제안서를 설명하세요. 발표자료와 동영상을 추가하세요. 시스템의 아키텍쳐 설명도 추가하세요.
-
- 
-[발표자료<img src="ppt.jpg"/>](/project.pptx)<br>
 <br> <br> 
   <iframe width="424" height="238" src="https://www.youtube.com/embed/reOGfxYJre0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
