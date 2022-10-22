@@ -25,15 +25,9 @@
 # 2. 프로젝트 구성 
 ## 2-1. 시스템 아키텍처
 <img src="System_Architecture.PNG"/>
-<br>
+
 ## 2-2. 서비스 아키텍처
 <img src="Service_Architecture.PNG"/>
-<br>
-## 2-3. 기능리스트
-<img src="Function.PNG"/>
-## 2-4. 적용 기술
-<img src="Skill.PNG"/>                
-## 2-5. ERD
 
 
 # 3. 프로젝트 결과
