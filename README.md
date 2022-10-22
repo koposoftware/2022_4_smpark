@@ -48,7 +48,7 @@
 
 # 4. 자기 소개
 
-| 이름 | 박수민 |
+| 이름 | 박수민 | <img src="sumin.jpg"/> |
 | ------------ | ------------- |
 | Content Cell | Content Cell  |
 | Content Cell | Content Cell  |
