@@ -47,8 +47,4 @@
   <iframe width="424" height="238" src="https://www.youtube.com/embed/reOGfxYJre0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # 4. 자기 소개
-|이름|박수민|사진|
-|메일|cjstk4_(@)naver.com| |  
-|abc|abc|abc|
-|abc|abc|abc|
-|abc|abc|abc|
+
