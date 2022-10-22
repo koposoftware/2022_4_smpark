@@ -1,6 +1,6 @@
 # 프로젝트 제목
 
-[프로젝트 홈페이지 - https://koposoftware.github.io/finalproject_template/](https://koposoftware.github.io/finalproject_template/)
+[프로젝트 홈페이지](https://koposoftware.github.io/2022_4_smpark/)
 
 # 1. 프로젝트 개요
 
