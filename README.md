@@ -29,6 +29,10 @@
 ## 2-2. 서비스 아키텍처
 <img src="Service_Architecture.PNG"/>
 
+## 2-3. 기능리스트
+<img src="Function.PNG"/>
+
+
 
 # 3. 프로젝트 결과
 프로젝트 결과를 추가하세요. 발표자료. 시연동영상을 추가하세요.
