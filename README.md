@@ -39,21 +39,15 @@
 
 
 # 3. 프로젝트 결과
-프로젝트 결과를 추가하세요. 발표자료. 시연동영상을 추가하세요.
-   <img src="architecture.png"/><br>
-   
-   <img src="erd.JPG"/><br>
-## 발표 ppt 
 
-[발표자료<img src="ppt.jpg"/>](/project.pptx)<br>
-## 시연 동영상 
+## 3-1. 발표 ppt 
+[발표 PPT](/project.pptx)<br>
+
+## 3-2. 시연 영상 
 
   <iframe width="424" height="238" src="https://www.youtube.com/embed/reOGfxYJre0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# 4. 기타
-그외 프로젝트를 더욱 설명할수 있는 것들을 추가하세요
- 
-# 5. 본인 소개
+# 4. 자기 소개
 
 본인 소개를 추가하세요
 
