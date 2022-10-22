@@ -32,6 +32,10 @@
 ## 2-3. 기능리스트
 <img src="Function.PNG"/>
 
+## 2-4. 적용 기술
+<img src="Skill.PNG"/>
+
+
 
 
 # 3. 프로젝트 결과
