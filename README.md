@@ -3,7 +3,7 @@
 [프로젝트 홈페이지](https://koposoftware.github.io/2022_4_smpark/)
 
 # 1. 프로젝트 소개
-[프로젝트 제안서](/project.pptx)<br>
+[프로젝트 제안서](/제안서_2260341005_박수민.pptx)<br>
 ## 1-1. 개발환경
 - OS : window10
 - Language : JAVA, Javascript, JQuery, html, css  PL/SQL
