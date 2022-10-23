@@ -50,7 +50,7 @@
 
 | 이름 | 박수민 |
 | ------------ | ------------- |
-| Content Cell | Content Cell  |
+| 메일 | <cjstk4_@naver.com>  |
 | Content Cell | Content Cell  |
 
 
