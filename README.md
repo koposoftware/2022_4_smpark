@@ -1,4 +1,4 @@
-# 프로젝트 제목
+# FUN하게 저축하자! 하나챌린지
 
 [프로젝트 홈페이지](https://koposoftware.github.io/2022_4_smpark/)
 
