@@ -48,8 +48,8 @@
 
 # 4. 자기 소개
 
-| 이름 | 박수민 | 사진 |
-| ------------ | ------------- | ------------- |
+| 이름 | 박수민 | <img src="sumin.jpg" width="150px"/> |
+| :--- | :--- | :--- |
 | 메일 | <cjstk4_@naver.com>  |  |
 | Language & Tools | JAVA, Javascript, JQuery, html, css, PL/SQL  | |
 | Database | Oracle DBMS  | |
