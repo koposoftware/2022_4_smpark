@@ -44,8 +44,7 @@
 
 ## 3-2. 시연 영상 
 
-  <iframe width="424" height="238" src="https://www.youtube.com/embed/reOGfxYJre0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="1217" height="685" src="https://www.youtube.com/embed/F7c2qPB-Ea0" title="웹개발프로젝트 : FUN하게 저축하자! 하나챌린지" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 # 4. 자기 소개
 
 | 이름 | 박수민 | <img src="sumin.jpg" width="150px"/> |
