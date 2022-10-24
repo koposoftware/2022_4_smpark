@@ -36,7 +36,7 @@
 <img src="Skill.PNG"/>
 
 ## 2-5. ERD
-
+<img src="erd.png"/>
 # 3. 프로젝트 결과
 
 ## 3-1. 발표 ppt 
