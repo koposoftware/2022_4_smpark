@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.DetailDAO">
+	<select id="productList" parameterType="HashMap" resultType="HashMap">
+	select 
+	    s.SAVING_CODE as SAVINGCODE
+	    , s.SAVING_NAME as SAVINGNAME
+	    , s.SAVING_DETAIL AS SAVINGDETAIL
+	    , s.MIN_AMOUNT AS MINAMOUNT
+	    , s.MAX_AMOUNT AS MAXAMOUNT
+	    , s.MIN_AGE AS MINAGE
+	    , s.MAX_AGE AS MAXAGE
+	    , s.CONSUME_CODE AS CONSUMECODE
+	    , s.MIN_PERIOD AS MINPERIOD
+	    , s.MAX_PERIOD  AS MAXPERIOD
+	    , s.BASE_RATE AS BASERATE
+	    , s.PRIME_RATE AS PRIMERATE
+	    , to_char(s.ADD_DATE, 'YYYY-MM-DD') AS ADDDATE
+        , c.CONSUME_CATEGORY AS CATEGORY
+	from saving s, consume_category c  where s.CONSUME_CODE = c.CONSUME_CODE order by saving_code
+	</select>
+</mapper>

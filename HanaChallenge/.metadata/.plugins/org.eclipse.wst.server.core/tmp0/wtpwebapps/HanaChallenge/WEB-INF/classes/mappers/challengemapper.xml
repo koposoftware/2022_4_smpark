@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.ChallengeDAO">	
+	<select id="getChallengeList" parameterType="HashMap" resultType="ChallengeVO">
+		select 
+			c.CHALLENGE_NO as challengeNo
+			, c.CHALLENGE_NAME as challengeName
+			, c.CHALLENGE_GOAL as challengeGoal
+			, c.CHALLENGE_STARTDATE as challengeStartDate
+			, c.CHALLENGE_ENDDATE as challengeEndDate
+			, c.CHALLENGE_PENALTYRATE as challengePenaltyRate
+			, c.ID as id
+			, c.CONSUME_CODE as consumeCode
+			, m.name as name
+		from CHALLENGE c, MEMBER m 
+		where 1=1 
+			and c.ID = '${id}' and c.id = m.id
+		order by c.CHALLENGE_NO asc
+	</select>
+	
+	<select id="getFriendChallengeList" parameterType="HashMap" resultType="ChallengeVO">
+		select 
+			c.CHALLENGE_NO as challengeNo
+			, c.CHALLENGE_NAME as challengeName
+			, c.CHALLENGE_GOAL as challengeGoal
+			, c.CHALLENGE_STARTDATE as challengeStartDate
+			, c.CHALLENGE_ENDDATE as challengeEndDate
+			, c.CHALLENGE_PENALTYRATE as challengePenaltyRate
+			, c.ID as id
+			, c.CONSUME_CODE as consumeCode
+			, m.name as name
+		from CHALLENGE c, MEMBER m
+		where 1=1 
+			and c.FRIEND_ID = '${id}'
+			and c.FRIEND_ACCEPT = 'N'
+			and c.id = m.id
+		order by c.CHALLENGE_STARTDATE asc
+	</select>
+	
+	<insert id="insertChallenge" parameterType="ChallengeVO">
+		insert into CHALLENGE (
+			CHALLENGE_NO
+			, CHALLENGE_NAME
+			, CHALLENGE_GOAL
+			, CHALLENGE_STARTDATE
+			, CHALLENGE_ENDDATE
+			, CHALLENGE_PENALTYRATE
+			, ID
+			, CONSUME_CODE
+			, ACCOUNT_NUM
+			, TYPE
+			, FRIEND_ID
+		) values (
+			seq_challenge_no.nextval
+			, #{challengeName}
+			, #{challengeGoal}
+			, #{challengeStartDate}
+			, #{challengeEndDate}
+			, #{challengePenaltyRate}
+			, #{id}
+			, #{consumeCode}
+			, #{accountNum}
+			, #{challengeType}
+			, #{friendId}
+		)
+	</insert>
+	
+	<update id="updateChallenge" parameterType="ChallengeVO">
+		update CHALLENGE 
+		set FRIEND_ACCEPT = 'Y'
+		where CHALLENGE_NO = #{challengeNo}
+	</update>
+	
+	<select id="sumChallenge" parameterType="HashMap" resultType="HashMap">
+		select 
+			b.consume_category as category
+			, b.consume_code as categoryCode
+			, sum(a.consume_amount) as sum
+			, DENSE_RANK() OVER(ORDER BY sum(a.consume_amount) desc) as rank
+		from 
+			consume_list a
+			, consume_category b 
+		where 1=1
+			and a.CONSUME_CODE = b.CONSUME_CODE
+			and EXTRACT(month from a.consume_date) = '9' 
+			and EXTRACT(year from a.consume_date) =  #{year}
+			and a.id = #{id}
+		group by 
+			b.consume_category
+			, b.consume_code
+		order by 
+			sum(a.consume_amount) desc
+	</select>
+	
+	<select id="selectAccount" parameterType="HashMap" resultType="HashMap">
+	select 
+	    account_num as accountNum
+	    , balance
+	    , account_name as accountName
+	from account
+    	where account_type='01' and id = #{id}
+	</select>
+	
+	
+</mapper>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.JoinProductDAO">	
+<insert id="insertJoinProduct" parameterType="JoinProductVO">
+	INSERT INTO join_saving(
+		join_no
+	    ,id
+	    ,saving_code
+	    ,end_date
+	    ,period
+	    ,interest_rate
+	    ,join_amount
+	    ,account_num
+	   )
+	    VALUES(
+	    seq_join_saving.nextval
+	    ,#{id}
+	    ,#{savingCode}
+	    ,#{endDate}
+	    ,#{period}
+	    ,#{interestRate}
+	    ,#{joinAmount}
+	    ,#{accountNum}
+	 )
+</insert>
+
+<select id="selectAccount" parameterType="HashMap" resultType="HashMap">
+	select 
+	    account_num as accountNum
+	    , balance
+	    , account_name as accountName
+	from account
+    	where account_type='01' and id = #{id}
+</select>
+
+</mapper>
+

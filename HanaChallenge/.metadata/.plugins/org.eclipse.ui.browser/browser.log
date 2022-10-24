@@ -1,0 +1,65 @@
+
+8월 18, 2022 18:51:55.406 NEW SESSION
+8월 18, 2022 18:51:55.406 [15172:11776:0818/185155.405:ERROR:device_event_log_impl.cc(214)] [18:51:55.404] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+8월 18, 2022 19:36:10.266 [15172:11776:0818/193610.266:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:10.266 [15172:11776:0818/193610.266:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:10.266 [15172:11776:0818/193610.266:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:10.267 [15172:11776:0818/193610.266:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:10.267 [15172:11776:0818/193610.266:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:13.468 [15172:11776:0818/193613.467:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:13.468 [15172:11776:0818/193613.467:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:13.468 [15172:11776:0818/193613.467:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:13.468 [15172:11776:0818/193613.467:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:36:13.468 [15172:11776:0818/193613.467:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.450 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.450 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.451 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.451 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.451 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+8월 18, 2022 19:38:11.451 [15172:11776:0818/193811.450:ERROR:CONSOLE(6)] "console.assert", source: devtools://devtools/bundled/devtools-frontend/front_end/panels/console/console.js (6)
+
+8월 18, 2022 20:04:17.468 NEW SESSION
+8월 18, 2022 20:04:17.468 [13904:232:0818/200417.467:ERROR:device_event_log_impl.cc(214)] [20:04:17.467] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+8월 18, 2022 20:09:44.51 [14896:2116:0818/200944.051:ERROR:device_event_log_impl.cc(214)] [20:09:44.051] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+8월 18, 2022 21:00:17.309 [14896:2116:0818/210017.309:ERROR:CONSOLE(1)] "Session is unregistering, can't dispatch pending call to Debugger.setBlackboxPatterns", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+8월 18, 2022 21:54:57.165 [14896:2116:0818/215457.139:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 18, 2022 21:55:44.975 [14896:2116:0818/215544.975:ERROR:interface_endpoint_client.cc(665)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 18, 2022 22:00:43.472 [14896:940:0818/220043.463:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -105
+8월 18, 2022 22:01:35.188 [14896:940:0818/220135.187:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -109
+8월 18, 2022 22:02:15.331 [14896:940:0818/220215.331:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -109
+8월 18, 2022 22:03:21.780 [14896:940:0818/220321.780:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:03:51.262 [14896:940:0818/220351.262:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:04:49.19 [14896:940:0818/220449.018:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:06:28.640 [14896:940:0818/220628.640:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:07:52.487 [14896:2116:0818/220752.487:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Connection failed (-106).
+8월 18, 2022 22:09:30.653 [14896:940:0818/220930.653:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:10:10.151 [14896:940:0818/221010.151:ERROR:connection_factory_impl.cc(425)] Failed to connect to MCS endpoint with error -106
+8월 18, 2022 22:10:10.206 [14896:2116:0818/221010.204:ERROR:device_event_log_impl.cc(214)] [22:10:10.205] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+9월 29, 2022 09:23:56.380 NEW SESSION
+9월 29, 2022 09:23:56.381 [7324:3672:0929/092356.379:ERROR:device_event_log_impl.cc(214)] [09:23:56.380] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 29, 2022 10:13:19.84 [0929/101319.083:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1fa18190-a146-413e-b337-730fd2ff6b1c: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 10:13:19.84 [0929/101319.084:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\4f0a310f-1715-413b-ab9d-2b8762eb72f1: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 10:13:19.85 [0929/101319.085:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\290e3941-b8de-4547-8d7d-f475d3a1554c: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 10:13:19.85 [0929/101319.085:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1fa18190-a146-413e-b337-730fd2ff6b1c: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 10:13:19.85 [0929/101319.085:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\4f0a310f-1715-413b-ab9d-2b8762eb72f1: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 10:13:19.85 [0929/101319.085:ERROR:filesystem_win.cc(130)] GetFileAttributes C:\Users\PRO\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\290e3941-b8de-4547-8d7d-f475d3a1554c: 지정된 파일을 찾을 수 없습니다. (0x2)
+9월 29, 2022 20:30:11.686 [7324:3672:0929/203011.684:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+9월 30, 2022 10:54:14.05 NEW SESSION
+9월 30, 2022 10:54:14.06 [12748:12744:0930/105414.004:ERROR:device_event_log_impl.cc(214)] [10:54:14.004] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+10월 01, 2022 15:06:25.168 NEW SESSION
+10월 01, 2022 15:06:25.169 [7864:9048:1001/150625.167:ERROR:device_event_log_impl.cc(214)] [15:06:25.168] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+10월 01, 2022 15:31:00.252 [7864:9048:1001/153100.251:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 01, 2022 16:20:29.144 [7864:9048:1001/162029.143:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+10월 01, 2022 16:23:15.279 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+10월 01, 2022 16:58:07.989 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+10월 01, 2022 16:58:25.523 [libprotobuf ERROR ..\..\third_party\protobuf\src\google\protobuf\message_lite.cc:133] Can't parse message of type "safe_browsing.ClientDownloadRequest" because it is missing required fields: (cannot determine missing fields for lite message)
+10월 01, 2022 19:03:49.112 [7864:9048:1001/190349.111:ERROR:interface_endpoint_client.cc(689)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+10월 03, 2022 15:21:09.45 NEW SESSION
+10월 03, 2022 15:21:09.45 [2472:7608:1003/152109.044:ERROR:device_event_log_impl.cc(214)] [15:21:09.044] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+
+10월 08, 2022 17:15:30.524 NEW SESSION
+10월 08, 2022 17:15:30.524 [5936:2752:1008/171530.523:ERROR:device_event_log_impl.cc(214)] [17:15:30.523] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)

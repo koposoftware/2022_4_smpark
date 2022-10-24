@@ -1,0 +1,1 @@
+select * from join_saving;

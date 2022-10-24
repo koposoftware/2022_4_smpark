@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myreport</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./style/css/main.css" />
+<link rel="stylesheet" href="./style/css/main2.css" />
+<link rel="stylesheet" href="./style/css/theme.css" />
+<link rel="stylesheet" href="./style/bootstrap/css/bootstrap-utilities.css" />
+<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		@font-face {
+    	font-family: 'GangwonEduPowerExtraBoldA';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+		@font-face {
+    	font-family: 'twayair';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+</style>
+</head>
+<body>
+	<header>
+   		<jsp:include page="/WEB-INF/jsp/include/header.jsp"></jsp:include>
+	</header>
+	<main class="hana__main-wrap">
+		<div align="center">
+					 <select name="year" id="year" >
+				        <option selected="2022"></option>
+				        <option name="2022" value="2022">2022</option>
+				        <option name="2021" value="2021">2021</option>
+				        <option name="2020" value="2020">2020</option>
+				     </select>
+				     년 
+				      <select name="month" id="month" >
+				        <option selected="7"></option>
+				        <option name="1" value="1">1</option>
+				        <option name="2" value="2">2</option>
+				        <option name="3" value="3">3</option>
+				        <option name="4" value="4">4</option>
+				        <option name="5" value="5">5</option>
+				        <option name="6" value="6">6</option>
+				        <option name="7" value="7">7</option>
+				        <option name="8" value="8">8</option>
+				        <option name="9" value="9">9</option>
+				        <option name="10" value="10">10</option>
+				        <option name="11" value="11">11</option>
+				        <option name="12" value="12">12</option>
+				             
+				       
+				        
+				     </select>
+		</div>
+     </main>
+	
+	
+ 
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+table, th, td {
+	
+	border-collapse: collapse;
+	font-weight : normal;
+	color: #555;
+}
+
+th, td {
+	padding: 8.5px;
+	border-bottom: 0.5px solid #e2e5ea;
+
+}
+
+td a:link, td a:visited {
+	color: #004080;
+	text-decoration: none;		
+}
+
+td a:hover {
+	text-decoration: underline;
+}
+
+table th {
+	color: rgb(0,0,64);
+}
+
+.cen {
+	text-align: center;
+	
+}
+
+.bo {
+	border: none;
+}
+
+.lin{
+	border-bottom: 0.5px solid #dfe7f0;
+}
+
+/*
+tr:nth-child(odd) {
+	background-color: #F7F9FC;
+}
+*/
+
+/* tr.even {
+	background-color: #F7F9FC;
+}  */
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@mixin font($number) {
+    @if $number == 12 {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+    } @else if $number == 14 {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    } @else if $number == 16 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    } @else if $number == 18 {
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+    } @else if $number == 20 {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    } @else if $number == 22 {
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+    } @else if $number == 24 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    } @else if $number == 26 {
+        font-size: 1.628rem;
+        line-height: 2.125rem;
+    } @else if $number == 28 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    } @else if $number == 30 {
+        font-size: 1.875rem;
+        line-height: 2.375rem;
+    } @else if $number == 32 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    } @else if $number == 34 {
+        font-size: 2.125rem;
+        line-height: 2.625rem;
+    } @else if $number == 36 {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    } @else if $number == 38 {
+        font-size: 2.375rem;
+        line-height: 2.875rem;
+    } @else if $number == 40 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    } @else if $number == 46 {
+        font-size: 2.875rem;
+        line-height: 3.375rem;
+    } @else if $number == 56 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    } @else if $number == 68 {
+        font-size: 4.25rem;
+        line-height: 4.75rem;
+    }
+}

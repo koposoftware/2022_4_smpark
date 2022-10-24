@@ -1,0 +1,60 @@
+@mixin bg-img($size) {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: $size;
+}
+
+@mixin dsp-flex($direcstion, $align, $justify) {
+    display: flex;
+    flex-direction: $direcstion;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin res-box($num) {
+    content: "";
+    display: block;
+    padding-bottom: $num;
+}
+
+@mixin position($loc, $zIndex) {
+    position: $loc;
+    z-index: $zIndex;
+}
+
+@mixin text-one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin text-clamp($number) {
+    overflow: hidden;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+@mixin tab-line {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+
+@mixin btn($color) {
+    cursor: pointer;
+    border: none;
+    background-color: $color;
+}
+
+@mixin colorHover {
+    transition: color 0.3s ease-in-out;
+}
+@mixin bgHover {
+    transition: background-color 0.3s ease-in-out;
+}

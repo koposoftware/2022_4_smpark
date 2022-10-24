@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.ReportDAO">	
+
+	<select id="sum" parameterType="ReportVO" resultType="HashMap">
+		select b.consume_category as category,  sum(a.consume_amount) as sum, 
+		DENSE_RANK() OVER(ORDER BY sum(a.consume_amount) desc) as rank from consume_list a, consume_category b 
+		where EXTRACT(month from a.consume_date) = #{month} and EXTRACT(year from a.consume_date) =  #{year}
+		and a.CONSUME_CODE = b.CONSUME_CODE and a.id = #{id}
+		group by b.consume_category order by sum(a.consume_amount) desc
+	</select>
+	
+	<select id="consumeDate" parameterType="ReportVO" resultType="HashMap">
+		select to_char(consume_date,'MM')||'월 '||to_char(consume_date,'DD')||'일 '||'('|| to_char(consume_date,'dy')||')' as consumeDate, 
+        to_char(sum(consume_amount), '9,999,999') as amount, 
+		DENSE_RANK() OVER(ORDER BY sum(consume_amount) desc) as rank from consume_list
+		where EXTRACT(month from consume_date) = #{month} and EXTRACT(year from consume_date) = #{year} and 
+		id= #{id} group by consume_date
+	</select>
+	
+	<select id="consumeStore" parameterType="ReportVO" resultType="HashMap">
+		select consume_store, to_char(consume_amount,'9,999,999') as amount, DENSE_RANK() OVER(ORDER BY consume_amount desc) as rank 
+		from consume_list
+		where EXTRACT(month from consume_date) = #{month} and EXTRACT(year from consume_date) = #{year} and id= #{id}  
+		group by consume_store, consume_amount
+		
+	</select>
+	
+	<select id="consumeStats" parameterType="ReportVO" resultType="HashMap">
+		SELECT CONSUME_CATEGORY AS CATEGORY, CONSUME_SUM AS SUM, CONSUME_RATE||'%' AS RATE, CONSUME_DIFFERENCE AS DIFFERENCE  
+		FROM CONSUME_STATS
+		WHERE EXTRACT(month from consume_DATE) = #{month}
+    	and EXTRACT(year from consume_date) =  #{year} and id= #{id}
+	</select>
+
+</mapper>

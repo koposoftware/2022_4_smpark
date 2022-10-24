@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Tue Oct 18 10:58:42 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\PRO\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-websocket\\9.0.65\\tomcat-embed-websocket-9.0.65.jar=WEB-INF/lib/tomcat-embed-websocket-9.0.65.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\PRO\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\9.0.65\\tomcat-embed-el-9.0.65.jar=WEB-INF/lib/tomcat-embed-el-9.0.65.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\PRO\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\9.0.65\\tomcat-embed-jasper-9.0.65.jar=WEB-INF/lib/tomcat-embed-jasper-9.0.65.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\PRO\\.m2\\repository\\org\\springframework\\spring-web\\5.3.22\\spring-web-5.3.22.jar=WEB-INF/lib/spring-web-5.3.22.jar

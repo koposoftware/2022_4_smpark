@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("../css/font.css");
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+  
+  
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none; 
+  
+  }
+
+
+form {
+	width :100%;
+}
+
+form1 {
+	width : 100%;
+}
+footer,
+header,
+nav,
+section,
+main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+select::-ms-expand {
+  display: none; }
+
+
+textarea {
+  padding: 0;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none; }
+
+body {
+  font-family: "noto", sans-serif; 
+  }
+  
+.openBtn {
+       background-color: rgb(9,154,150);
+       padding: 8px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       width: 130px;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+       font-family : "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     }
+     
+.openBtn:hover {
+       background-color: white;
+       padding: 8px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       width: 130px;
+       color: black;
+       border: 1px solid rgb(9,154,150);
+     }
+     
+.chalBtn {
+	   font-size: 15px;
+       background-color: rgb(9,154,150);
+       padding: 13px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       width: 48%;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+       
+     }
+     
+.chalBtn:hover {
+	   font-size: 15px;
+       background-color: white;
+       padding: 13px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       width: 48%;
+       color: black;
+       border: 1px solid rgb(9,154,150);
+     }
+     
+.homeBtn {
+	   font-size: 16.5px;
+       background-color: rgb(9,154,150);
+       padding: 13px 10px;
+       border-radius: 4px;
+       width:150px;
+       cursor: pointer;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+       font-family: "noto", sans-serif
+     }
+     
+.homeBtn:hover {
+	   font-size: 16.5px;
+       background-color: white;
+       padding: 13px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       color: black;
+       border: 1px solid rgb(9,154,150);
+     }
+     
+.homeBtn2 {
+	   font-size: 16.5px;
+       background-color: white;
+       padding: 13px 10px;
+       border-radius: 4px;
+       width:150px;
+       cursor: pointer;
+       color:black;
+       border: 1px solid rgb(9,154,150);
+       font-family: "noto", sans-serif
+     }
+     
+.homeBtn2:hover {
+	   font-size: 16.5px;
+       background-color: rgb(9,154,150);
+       padding: 13px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+     }
+     
+.proBtn {
+	   font-size: 17px;
+       background-color: white;
+       padding: 10px 10px;
+       border-radius: 4px;
+       width:150px;
+       cursor: pointer;
+       color: black;
+       border: 2px solid rgb(9,154,150);
+       font-family: "noto", sans-serif;
+     }
+     
+.proBtn:hover {
+	   font-size: 17px;
+       background-color: rgb(9,154,150);
+       padding: 10px 10px;
+       border-radius: 4px;
+       cursor: pointer;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+     }
+     
+.listBtn {
+       padding: 13px 10px;
+       width:150px;
+       cursor: pointer;
+       color: black;
+       border: none;
+       font-size: 14px;
+     }
+     
+.listBtn:hover {
+	   font-size: 14px;
+       background-color: rgb(9,154,150);
+       padding: 5px 5px;
+       border-radius: 4px;
+       cursor: pointer;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+     }
+.listBtn2 {
+       
+       width:100px;
+       cursor: pointer;
+       color: black;
+       border: none;
+       font-size: 14px;
+       background: none;
+   	   padding: 5px 10px;
+     }
+     
+.listBtn2:hover {
+	   font-size: 14px;
+       background-color: rgb(9,154,150);
+       
+       border-radius: 4px;
+       cursor: pointer;
+       color: white;
+       border: 1px solid rgb(9,154,150);
+  
+     }
+
+.hana__icon {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hana__icon.icon--deposit {
+    background-image: url(../../image/img/savings.png); }
+  .hana__icon.icon--loan {
+    background-image: url(../../image/img/salary.png); }
+  .hana__icon.icon--foreign {
+    background-image: url(../../image/img/money.png); }
+  .hana__icon.icon--insurance {
+    background-image: url(../../image/img/insurance.png); }
+  .hana__icon.icon--fund {
+    background-image: url(../../image/img/fund.png); }
+  .hana__icon.icon--trust {
+    background-image: url(../../image/img/partnership.png); }
+  .hana__icon.icon--pension {
+    background-image: url(../../image/img//retirement.png); }
+  .hana__icon.icon--isa {
+    background-image: url(../../image/img/isa.png); }
+
+.hana__header-wrap {
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 1px solid #575757; }
+  .hana__header-wrap .hana__header-inner {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+.hana__header-wrap .hana__header-inner .hana__logo-wrap {
+      width: 200px;
+      height: 100%; 
+     }
+      
+.hana__header-wrap .hana__header-inner .hana__logo-wrap .hana__logo-link {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+        
+.hana__header-wrap .hana__header-inner .hana__logo-wrap .hana__logo-link img {
+          height: 100%; }
+          
+.hana__header-wrap .hana__header-inner .hana__header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%; }
+      
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__button-wrap {
+        width: fit-content;
+        position: relative;
+        margin-top: 5px; }
+        
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__button-wrap::before {
+          position: relative;
+          content: "";
+          display: block;
+          width: 1px;
+          height: 55%;
+          background-color: #a7a4a4;
+          top: 50%;
+          left: 54%;
+          transform: translate(2500%, 50%); }
+
+.hana__header-wrap2 .hana__header-inner2 .hana__header-right2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%; }
+          
+.hana__header-wrap2 .hana__header-inner2 .hana__header-right2 .hana__header__button-wrap2 {
+        width: fit-content;
+        position: relative;
+        margin-top: 5px; }
+        
+.hana__header-wrap22 .hana__header-inner2 .hana__header-right2 .hana__header__button-wrap2::before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 1px;
+          height: 55%;
+          background-color: #a7a4a4;
+          top: 50%;
+          left: 54%;
+          transform: translate(-50%, -50%); }
+          
+          
+          
+    
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__button-wrap .hana__header__button {
+          border: none;
+          outline: none;
+          background-color: #fff;
+          cursor: pointer;
+          color: #575757;
+          font-weight: 500;
+          padding: 4px 1rem;
+          margin: 0; }
+          
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__nav-wrap {
+        width: 80%;
+        align-self: flex-start;
+        margin-left: 4rem; }
+        
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__nav-wrap ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between; }
+          
+.hana__header-wrap .hana__header-inner .hana__header-right .hana__header__nav-wrap ul li a {
+            display: block;
+            padding: 1rem;
+            padding-bottom: 22px;
+            color: #575757;
+            font-weight: 500;
+            font-size: 18px; 
+            font-family: 'InfinitySans-RegularA1'; 
+             }
+
+.hana__main-wrap {
+  margin-top: 126px; }
+  .hana__main-wrap .hana__main__banner-wrap {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(247, 247, 247);
+    position: relative; }
+    .hana__main-wrap .hana__main__banner-wrap .hana__main__banner-inner {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      height: 100%; }
+      .hana__main-wrap .hana__main__banner-wrap .hana__main__banner-inner .mySwiper {
+        width: 100%;
+        height: 100%; }
+        .hana__main-wrap .hana__main__banner-wrap .hana__main__banner-inner .mySwiper .swiper-wrapper .hana__main__banner-slide-list {
+          width: 100%;
+          height: 100%; }
+          .hana__main-wrap .hana__main__banner-wrap .hana__main__banner-inner .mySwiper .swiper-wrapper .hana__main__banner-slide-list img {
+            width: 100%; }
+    .hana__main-wrap .hana__main__banner-wrap .hana__main__nav-wrap {
+      border: 1px solid sred;
+      position: absolute;
+      width: 45%;
+      height: 80px;
+      border-radius: 15px;
+      background-color: #099a96;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      z-index: 5; }
+      .hana__main-wrap .hana__main__banner-wrap .hana__main__nav-wrap .hana__main__nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start; }
+        .hana__main-wrap .hana__main__banner-wrap .hana__main__nav-wrap .hana__main__nav li {
+          width: calc(100% / 4); }
+          .hana__main-wrap .hana__main__banner-wrap .hana__main__nav-wrap .hana__main__nav li a {
+            display: block;
+            width: 100%;
+            padding: 1rem 0;
+            color: #fff;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center; }
+  .hana__main-wrap .hana__main-inner {
+    max-width: 1300px;
+    margin: 0 auto; }
+    .hana__main-wrap .hana__main-inner .hana__main__section {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 2.2rem;
+       }
+      .hana__main-wrap .hana__main-inner .hana__main__section .hana__main__title {
+        display: block;
+        color: #575757;
+        font-weight: 600;
+        font-size: 20px; }
+      .hana__main-wrap .hana__main-inner .hana__main__section .hana__main__list-wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2.3rem; }
+        .hana__main-wrap .hana__main-inner .hana__main__section .hana__main__list-wrap li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          color: #575757;
+          font-weight: 500; }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.ProductAdminDAO">
+	<select id="productList" parameterType="HashMap" resultType="HashMap">
+	select 
+	    s.SAVING_CODE as SAVINGCODE
+	    , s.SAVING_NAME as SAVINGNAME
+	    , s.SAVING_DETAIL AS SAVINGDETAIL
+	    , s.MIN_AMOUNT AS MINAMOUNT
+	    , s.MAX_AMOUNT AS MAXAMOUNT
+	    , s.MIN_AGE AS MINAGE
+	    , s.MAX_AGE AS MAXAGE
+	    , s.CONSUME_CODE AS CONSUMECODE
+	    , s.MIN_PERIOD AS MINPERIOD
+	    , s.MAX_PERIOD  AS MAXPERIOD
+	    , s.BASE_RATE AS BASERATE
+	    , s.PRIME_RATE AS PRIMERATE
+	    , to_char(s.ADD_DATE, 'YYYY-MM-DD') AS ADDDATE
+        , c.CONSUME_CATEGORY AS CATEGORY
+	from saving s, consume_category c  where s.CONSUME_CODE = c.CONSUME_CODE order by saving_code
+	</select>
+	
+	<delete id="deleteproduct" parameterType="ProductVO">
+	DELETE FROM saving WHERE saving_code = ${savingCode}
+	</delete>
+	
+	<select id="getProduct" parameterType="HashMap" resultType="ProductVO">
+	select 
+	    SAVING_CODE as SAVINGCODE
+	    , SAVING_NAME as SAVINGNAME
+	    , SAVING_DETAIL AS SAVINGDETAIL
+	    , MIN_AMOUNT AS MINAMOUNT
+	    , MAX_AMOUNT AS MAXAMOUNT
+	    , MIN_AGE AS MINAGE
+	    , MAX_AGE AS MAXAGE
+	    , CONSUME_CODE AS CONSUMECODE
+	    , MIN_PERIOD AS MINPERIOD
+	    , MAX_PERIOD  AS MAXPERIOD
+	    , BASE_RATE AS BASERATE
+	    , PRIME_RATE AS PRIMERATE
+	    , to_char(ADD_DATE, 'YYYY-MM-DD') AS ADDDATE
+	from saving	
+	where saving_code = ${savingCode}
+	</select>
+	
+	<update id="updateProduct" parameterType="ProductVO">
+		update SAVING 
+		set SAVING_NAME = #{savingName}
+			, SAVING_DETAIL = #{savingDetail}
+			, MIN_AMOUNT = #{minAmount}
+			, MAX_AMOUNT = #{maxAmount}
+			, MIN_AGE = #{minAge}
+			, MAX_AGE = #{maxAge}
+			, MIN_PERIOD = #{minPeriod}
+			, MAX_PERIOD = #{maxPeriod}
+			, CONSUME_CODE = #{consumeCode}
+			, BASE_RATE = #{baseRate}
+			, PRIME_RATE = #{primeRate}
+		where SAVING_CODE = #{savingCode}
+	</update>
+	
+	<insert id="insertProduct" parameterType="ProductVO">
+		INSERT INTO saving(
+		    saving_code,
+		    saving_name,
+		    saving_detail,
+		    min_amount,
+		    max_amount,
+		    min_age,
+		    max_age,
+		    consume_code,
+		    min_period,
+		    max_period,
+		    base_rate,
+		    prime_rate,
+		    add_date
+		)
+		VALUES (
+		    seq_saving.nextval,
+		    #{savingName},
+		    #{savingDetail},
+		    #{minAmount},
+		    #{maxAmount},
+		    #{minAge},
+		    #{maxAge},
+		    #{consumeCode},
+		    #{minPeriod},
+		    #{maxPeriod},
+		    #{baseRate},
+		    #{primeRate},
+		    sysdate
+		)
+	</insert>
+</mapper>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.MypageDAO">	
+<select id="selectAccount" parameterType="HashMap" resultType="HashMap">
+	select 
+	    account_num as accountNum
+	    , balance
+	    , account_name as accountName
+	    , substr(account_num,-2) as accountCode
+	from account
+    	where id = #{id}
+</select>
+
+<select id="transList" parameterType="String" resultType="HashMap">
+select 
+    my_account as myAccount
+    , my_balance as myBalance
+    , trans_no as transNo
+    , trans_type as transType
+    , target_name as targetName
+    , trans_amount as transAmount
+    , to_char(trans_date,'YYYY-MM-DD') as transDate
+    , target_account as targetAccount
+    , target_bankcode as targetBankcode
+from transaction where my_account = #{accountNum}
+</select>
+
+<select id="joinsavingList" parameterType="HashMap" resultType="HashMap">
+select 
+    id
+    , j.saving_code as savingCode
+    , j.start_date as startDate
+    , j.end_date as endDate
+    , j.period
+    , j.interest_rate as interestRate
+    , j.join_amount as joinAmount
+    , j.collect_amount as collectAmount
+    , j.account_num as accountNum
+    , j.join_no as joinNo
+    , s.consume_code as consumeCode
+    , s.saving_name as savingName
+from join_saving j, saving s where j.saving_code = s.saving_code and j.id = #{id}
+</select>
+
+<select id="savingDetail" parameterType="HashMap" resultType="HashMap">
+select 
+    id
+    , j.saving_code as savingCode
+    , to_char(j.start_date,'YYYY-MM-DD') as startDate
+    , to_char(j.end_date, 'YYYY-MM-DD') as endDate
+    , j.period
+    , j.interest_rate as interestRate
+    , j.join_amount as joinAmount
+    , j.collect_amount as collectAmount
+    , j.account_num as accountNum
+    , j.join_no as joinNo
+    , s.consume_code as consumeCode
+    , s.saving_name as savingName
+from join_saving j, saving s where #{savingCode} = s.saving_code and j.id = #{id}
+
+</select>
+
+<select id="rateChange" parameterType="HashMap" resultType="HashMap">
+	select 
+    to_char(change_date,'YYYY-MM-DD') as changeDate
+    ,to_char(change_date,'MM-DD') as changeDate2
+    , consume
+    , sum_consume as sumConsume
+    , prime_rate as primeRate
+    , saving_name as savingName
+    , saving_code as savingCode
+    , consume_code as consumeCode
+    , id
+from rate_change where saving_code = #{savingCode} and id = #{id} order by change_date
+
+</select>
+
+<select id="challengeList" parameterType="HashMap" resultType="HashMap">
+select
+    c.challenge_no as challengeNo
+    , c.challenge_name as challengeName
+    , c.challenge_goal as challengeGoal
+    , to_char(c.challenge_startdate,'YYYY-MM-DD') as startDate
+    , to_char(c.challenge_enddate,'YYYY-MM-DD') as endDate
+    , to_char(c.challenge_startdate,'MM') as month
+    , c.challenge_penaltyrate as penaltyRate
+    , c.consume_code as consumeCode
+    , s.consume_category as consumeCategory
+    , c.account_num as accountNum
+    , c.id
+    , c.now_spanding as nowSpanding
+    , c.type
+from challenge c, consume_category s where id = #{id} and c.consume_code = s.consume_code
+
+</select>
+
+</mapper>

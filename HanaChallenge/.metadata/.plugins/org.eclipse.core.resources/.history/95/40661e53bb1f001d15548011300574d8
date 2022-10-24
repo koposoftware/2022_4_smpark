@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>myreport</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./style/css/main.css" />
+<link rel="stylesheet" href="./style/css/main2.css" />
+<link rel="stylesheet" href="./style/css/theme.css" />
+<link rel="stylesheet" href="./style/bootstrap/css/bootstrap-utilities.css" />
+<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		@font-face {
+    	font-family: 'GangwonEduPowerExtraBoldA';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+		@font-face {
+    	font-family: 'twayair';
+    	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+</style>
+</head>
+<body>
+	<header>
+   		<jsp:include page="/WEB-INF/jsp/include/header.jsp"></jsp:include>
+	</header>
+	<main class="hana__main-wrap">
+	 <select name="year" id="floatingSelect" aria-label="Financial Consultancy">
+        <option selected=""></option>
+        <option name="2022" value="2022">2022</option>
+        <option name="2021" value="2021">2021</option>
+        <option name="2020" value="2020">2020</option>
+     </select>
+     년
+     </main>
+	
+	
+ 
+</body>
+</html>

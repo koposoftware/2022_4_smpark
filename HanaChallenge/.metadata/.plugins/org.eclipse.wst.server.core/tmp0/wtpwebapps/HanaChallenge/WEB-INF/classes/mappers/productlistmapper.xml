@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ac.kopo.dao.ProductListDAO">
+
+	<select id="savinglist" parameterType="HashMap" resultType="HashMap">
+	select 
+		s.SAVING_CODE as savingCode
+		, s.SAVING_NAME as savingName
+		, s.SAVING_DETAIL as savingDetail
+		, s.MIN_AMOUNT as minAmount
+		, s.MAX_AMOUNT as maxAmount
+		, s.MIN_AGE as minAge
+		, s.MAX_AGE as maxAge
+		, s.CONSUME_CODE as consumeCode
+		, s.MIN_PERIOD as minPeriod
+		, s.MAX_PERIOD as maxPeriod
+		, s.BASE_RATE as baseRate
+		, s.PRIME_RATE as primeRate
+		, decode(sf.FAVORITE_YN, null, 'N', sf.FAVORITE_YN) as favoriteYn
+	from saving s
+	left outer join SAVING_FAVORITE sf on s.SAVING_CODE = sf.SAVING_CODE
+	where 1=1
+	<if test="keyword != null">and s.SAVING_NAME like '%' ||  #{keyword} || '%'</if>
+	</select>
+	
+	<select id="categorysavinglist" parameterType="HashMap" resultType="HashMap">
+	select 
+	    SAVING_CODE
+	    , SAVING_NAME
+	    , SAVING_DETAIL
+	    , MIN_AMOUNT
+	    , MAX_AMOUNT
+	    , MIN_AGE
+	    , MAX_AGE
+	    , CONSUME_CODE
+	    , MIN_PERIOD
+	    , MAX_PERIOD
+	    , BASE_RATE
+	    , PRIME_RATE
+	from saving where consume_code = #{consumeCode}
+	</select>
+</mapper>
